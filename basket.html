@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Your Basket | BearBoyClothing</title>
+    <link rel="stylesheet" href="/CSS/mobile.css">
+    <link rel="stylesheet" href="/CSS/desktop.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo-container">
+            <a href="/HTML Pages/index.html" class="brand-logo">
+                <img src="/images/1.png" alt="BearBoyClothing Official Logo">
+            </a>
+        </div>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="/HTML Pages/index.html">Home</a></li>
+                <li><a href="/HTML Pages/products.html">Shop All</a></li>
+                <li><a href="/HTML Pages/basket.html" class="active">Basket(<span id="basket-count">0</span>)</a></li>
+                <li><a href="/HTML Pages/about-us.html">About</a></li>
+                <li><a href="/HTML Pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="basket-section">
+            <h2>Your Basket</h2>
+
+            <div class="basket-layout">
+                <div class="basket-item" id="basket-item-container">
+                    <p class="empty-basket-message">Your basket is currently empty.</p>
+                </div>
+
+                <aside class="basket-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="basket-subtotal">£0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery:</span>
+                        <span>Free</span>
+                    </div>
+                    <hr class="summary-divider">
+                    <div class="summary-row total-row">
+                        <strong>Total</strong>
+                        <strong id="basket-total">£0.00</strong>
+                    </div>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 BearBoyClothing. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/about-us.html">Our Story</a></li>
+                <li><a href="/contact.html">Customer Support</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/JavaScript/script.js"></script>
+</body>
+</html>

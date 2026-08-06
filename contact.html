@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BearBoyClothing</title>
+    <link rel="stylesheet" href="/CSS/mobile.css">
+    <link rel="stylesheet" href="/CSS/desktop.css">
+</head>    
+<body>
+    
+    <header class="site-header">
+        <div class="logo-container">
+            <a href="/HTML Pages/index.html" class="brand-logo">
+                <img src="/images/1.png" alt="BearBoyClothing Official Logo">
+            </a>
+        </div>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="/HTML Pages/index.html">Home</a></li>
+                <li><a href="/HTML Pages/products.html">Shop All</a></li>
+                <li><a href="/HTML Pages/basket.html">Basket (<span id="basket-count">0</span>)</a></li>
+                <li><a href="/HTML Pages/about-us.html">About</a></li>
+                <li><a href="/HTML Pages/contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-header">
+                <h1>Hit Us Up</h1>
+                <p>Got a question about a drop, sizing, or an order? Drop us a message.</p>
+            </div>
+
+            <div class="contact-layout">
+                <aside class="contact-info">
+                    <h3>Customer Support</h3>
+                    <p><strong>Email:</strong>support@bearboyclothing.co.uk</p>
+                    <p><strong>Hours:</strong>Mon - Fri, 9am - 5pm GMT</p>
+                    <br>
+                    <h3>HQ / Studio</h3>
+                    <p>123 Streetwear Sq</p>
+                    <p>Manchester, M1 1AB</p>
+                    <p>United Kingdom</p>
+                </aside>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <small class="error-message" id="name-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" name="name" placeholder="Enter your email address">
+                        <small class="error-message" id="name-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message*</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can we help?"></textarea>
+                        <small class="error-message" id="message-error"></small>
+                    </div>
+
+                    <button type="submit" class="sumbit-btn">Submit Message</button>
+
+                    <p id="form-success-msg" class="success-message" style="display: none;">Message sent! (we aim to get back to you asap but please give 3-5days) Thank you!</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 BearBoyClothing. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/about-us.html">Our Story</a></li>
+                <li><a href="/contact.html">Customer Support</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/JavaScript/script.js"></script>
+</body>
+</html>
